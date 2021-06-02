@@ -18,7 +18,7 @@ h1 {
 }
  
 .big-image {
-    background-image: url('https://files.slack.com/files-pri/T02MD9XTF-F0246115ELR/film.jpg');
+    background-image: url(./images/film.jpg);
     height: 40%;
     background-position: center;
     background-repeat: no-repeat;
