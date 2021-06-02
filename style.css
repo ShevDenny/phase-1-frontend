@@ -16,9 +16,9 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
-
+ 
 .big-image {
-    background-image: url(./images/Movies.jpg);
+    background-image: url('https://files.slack.com/files-pri/T02MD9XTF-F0246115ELR/film.jpg');
     height: 40%;
     background-position: center;
     background-repeat: no-repeat;
