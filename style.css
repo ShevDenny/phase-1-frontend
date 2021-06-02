@@ -19,7 +19,7 @@ h1 {
  
 .big-image {
     background-image: url(./images/film.jpg);
-    height: 40%;
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,4 +62,18 @@ li {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .card {
+    text-align: center;
+    border: rgb(0, 24, 102) solid 1px;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    display: inline-grid;
+    margin: 5px 5px;
+    box-shadow: 3px 4px rgb(224, 224, 224)
+  }
+
+  body {
+      background-color: #ffffff;
   }
