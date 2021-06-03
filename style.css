@@ -3,10 +3,31 @@ body, html {
 }
 
 h1 {
+    color: rgb(79, 160, 203);
     font-size: 50px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
+h2 {
+    color: rgb(79, 160, 203);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    margin-top: 170px;
+}
+
+h4 {
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: rgb(78, 175, 255);
+    
+}
 .main-nav a {
     float: left;
     display: block;
@@ -16,10 +37,14 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
- 
+
+a:hover {
+    background-color: rgb(79, 160, 203);
+  }
+  
 .big-image {
-    background-image: url(./images/film.jpg);
-    height: 50%;
+    background-image: url(./images/banner.jpg);
+    height: 35%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +76,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
 }
 
 li {
@@ -66,13 +91,31 @@ li {
 
   .card {
     text-align: center;
-    border: rgb(0, 24, 102) solid 1px;
+    border: rgb(224, 224, 224) solid 1px;
     background-color: rgb(255, 255, 255);
-    padding: 1rem;
+    padding: 5px;
     display: inline-grid;
     margin: 5px 5px;
     box-shadow: 3px 4px rgb(224, 224, 224)
   }
+
+  button {
+    background-color: rgb(79, 160, 203);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    color: rgb(0, 0, 0);
+  }
+
 
   body {
       background-color: #ffffff;

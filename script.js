@@ -10,49 +10,42 @@ function getMovies() {
 
 function renderMovies(movieCollection){
     movieCollection.forEach(movie => {
-        let movieImg = document.createElement('img')
+        const movieImg = document.createElement('img')
         movieImg.src = movie.image
         movieImg.width = 350
         movieImg.height = 550
-        let h2 = document.createElement('h2')
+
+        const h2 = document.createElement('h2')
+        const btnDiv = document.createElement('div')
+        const likeBtn = document.createElement('button')
+        const dislikeBtn = document.createElement('button')
         h2.textContent = movie.title
-        let btnDiv = document.createElement('div')
-        let likeBtn = document.createElement('button')
-        let dislikeBtn = document.createElement('button')
+
         likeBtn.textContent = "Like"
         dislikeBtn.textContent ="Dislike"
         btnDiv.append(likeBtn, dislikeBtn)
-        let movieDiv = document.querySelector(".Movie")
+        const movieDiv = document.querySelector(".Movies")
         movieDiv.append(h2, movieImg, btnDiv)
-        
-        let divCard = document.createElement('div')
+
+        const divCard = document.createElement('div')
         divCard.setAttribute('class', 'card')
+        divCard.setAttribute('id', 'ids' + movie.id)
         divCard.append(h2, movieImg,btnDiv)
         movieDiv.append(divCard)   
-    // likeBtn.addEventListener('click', addToWatchList)
-      
-        // dislikeBtn.addEventListener('click', removeMovie)  
-    
- })   
 
- function addToWatchList(){
-    let newCard = document.querySelector('likeBtn').addEventListener('click', ()=>{
-        console.log(newCard)
-    })
+            console.log(movieCollection)
+            likeBtn.addEventListener('click', (e) =>{
+            console.log(divCard)
+            let watchList = document.querySelector('.watch-list')
+            watchList.appendChild(divCard)
+        })   
+
+          // console.log(movieCollection)
+            dislikeBtn.addEventListener('click', (e) =>{
+            console.log(divCard)
+            divCard.remove();
+
+        })  
+  }) 
  }
-
- 
-}
-
-// function addToWatchList(e){
-//     // // console.log(e)
-//     // let addedCard = 
-//     // let li = document.createElement('li')
-//     let newCard = document.querySelector('div.card')
-//     console.log(newCard)
-//     // li.textContent = input.value
-//     // input.value = ""
-//     // document.querySelector("").appendChild('li')
-// }
-
 
