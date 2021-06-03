@@ -10,7 +10,7 @@ h1 {
 
 h2 {
     color: rgb(79, 160, 203);
-    font-size: 20px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -18,7 +18,8 @@ h2 {
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
-    margin-top: 170px;
+    margin-top: 220px;
+    margin-right: 100px;
 }
 
 h4 {
@@ -26,8 +27,15 @@ h4 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color: rgb(78, 175, 255);
-    
 }
+
+h5 {
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
 .main-nav a {
     float: left;
     display: block;
@@ -44,7 +52,7 @@ a:hover {
   
 .big-image {
     background-image: url(./images/banner.jpg);
-    height: 35%;
+    height: 40%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,11 +101,18 @@ li {
     text-align: center;
     border: rgb(224, 224, 224) solid 1px;
     background-color: rgb(255, 255, 255);
-    padding: 5px;
+    padding: 30px;
     display: inline-grid;
-    margin: 5px 5px;
+    margin: 10px 10px;
     box-shadow: 3px 4px rgb(224, 224, 224)
   }
+
+  .card:hover {
+    transition: 1s ease;
+    background-color: rgb(0, 0, 0);
+    opacity:1;
+    transition: 0.80s ease;
+ }
 
   button {
     background-color: rgb(79, 160, 203);
@@ -114,9 +129,43 @@ li {
 
   button:hover{
     color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
   }
 
 
   body {
       background-color: #ffffff;
   }
+
+ .movies-details {
+     background-color: rgb(0, 0, 0);
+     text-align: center;
+     margin-top: 20px;
+ }
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.watch-list {
+background-color: rgb(255, 255, 255);
+}
+
+
+/* .mDetails {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     color: white;
+ }
+
+ .details-rest {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+ } */
+/* 
+.searchForm {
+    text-decoration: tomato;
+} */
